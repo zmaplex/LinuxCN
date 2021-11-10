@@ -61,10 +61,9 @@ func check() {
 	}
 
 	user := getProcessOwner()
-	fmt.Println(user)
+
 	if user != "root" {
-		fmt.Println(user != "root")
-		fmt.Println("Need to run as root user: " + user)
+		fmt.Println("Need to run as root user")
 		os.Exit(0)
 	}
 
